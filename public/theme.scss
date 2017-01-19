@@ -1,0 +1,27 @@
+@import '~@angular/material/core/theming/all-theme';
+@include md-core();
+$primary: md-palette($md-grey, 900);
+$accent: md-palette($md-green, A400);
+$warn:    md-palette($md-red, 600);
+$theme: md-light-theme($primary, $accent, $warn);
+@include angular-material-theme($theme);
+
+.example-fill-remaining-space {
+  // This fills the remaining space, by using flexbox. 
+  // Every toolbar row uses a flexbox row layout.
+  flex: 1 1 auto;
+}
+
+#box {
+  font-family: 'Cabin Sketch', cursive;
+    color:#D50000;
+    font-size: 4vw;
+
+}
+#bottom {
+  
+    font-family: 'Rock Salt', cursive;
+    color:#D50000;
+    font-size: 1.5vw;
+  
+}
